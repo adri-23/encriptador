@@ -48,7 +48,6 @@ function copiar(){
     mensaje.select()
     navigator.clipboard.writeText(mensaje.value)
     mensaje.value = ""
-    alert("copiado")
 }
 
 function btnOcultar(){
