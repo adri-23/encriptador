@@ -1,0 +1,113 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+
+html body {
+    background-image: url(imagenes/body.jpg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.logo {
+    position: relative;
+    left: 30px;
+    top: 20px;
+    bottom: 20px;
+    filter: opacity(20) drop-shadow(0 0 0 rgb(0, 238, 255));
+
+}
+
+
+main {
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+
+.input-texto {
+    width: 600px;
+    height: 400px;
+    margin-right: 100px;
+    margin-left: 50px;
+    padding: 20px;
+    background: #268E00;
+    opacity: 0.6;
+    border-radius: 25px;
+
+}
+
+.texto {
+    margin: 0;
+    font-size: large;
+    margin-left: 70px;
+    text-shadow: 2px 2px 5px red;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0 0 0 20px;
+}
+
+.encriptador,
+.desencriptar {
+    margin-left: 150px;
+    background-color: rgb(139, 53, 0);
+    color: white;
+}
+
+.encriptador:hover,
+.desencriptar:hover,
+.copiar:hover {
+    background: #0fc3ec;
+    transform: scale(1.2);
+}
+
+.encriptador,
+.desencriptar,
+.copiar {
+    width: 20%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.texto-encriptado .copiar {
+    top: 50%;
+    left: 50%;
+    transform: translate(-280%, -180%);
+}
+
+
+.mensaje {
+    width: 300px;
+    height: 510px;
+    left: 1000px;
+    top: 40px;
+    padding: 20px;
+    border-radius: 25px;
+    background-image: url(imagenes/encriptar_texto.jpeg);
+    opacity: 0.8;
+}
+
+.copiar {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 150px;
+    background-color: rgb(139, 53, 0);
+    color: white;
+    display: none;
+}
